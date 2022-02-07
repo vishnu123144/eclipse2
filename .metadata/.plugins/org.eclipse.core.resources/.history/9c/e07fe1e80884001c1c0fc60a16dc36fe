@@ -1,0 +1,5 @@
+package com.brillio.repository;
+
+public class StudentRepo {
+
+}

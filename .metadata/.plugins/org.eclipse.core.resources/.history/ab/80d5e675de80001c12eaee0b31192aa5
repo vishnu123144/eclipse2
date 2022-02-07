@@ -1,0 +1,24 @@
+package com.brillio.jwt;
+
+import java.sql.Date;
+import java.util.Base64;
+
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	String key="SECRETSECRETSECRETSECRETSECRETSECRETSECRETSECRETSECRET";
+        String token=Jwts.builder().setId("A5256")
+        .setSubject("VISHNU")
+        .setIssuer("RAM")
+        .setIssuedAt(new Date(System.currentTimeMillis()))
+        .signWith(SignatureAlgorithm.HS256,Base64.getEncoder().encode(key.getBytes()))
+        .compact();
+        System.out.println(token);
+        
+    }
+}

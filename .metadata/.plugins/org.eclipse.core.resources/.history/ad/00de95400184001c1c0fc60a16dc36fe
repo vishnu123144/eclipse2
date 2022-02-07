@@ -1,0 +1,22 @@
+package com.brillio.jwt;
+
+import java.sql.Date;
+
+import io.jsonwebtoken.Jwts;
+
+public class JwtUtil {
+
+	public String generateToken(
+			String id,String subject,String key) {
+		
+		return Jwts.builder()
+				.setId(id)
+				.setSubject(subject)
+				.setIssuer("VishnuIT")
+				.setIssuedAt(new Date(System.currentTimeMillis()))
+				
+		
+		
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.springsecurity.service;
+
+public class MyUserDetailsService {
+
+}

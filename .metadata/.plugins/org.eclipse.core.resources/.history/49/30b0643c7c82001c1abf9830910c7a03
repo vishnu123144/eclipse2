@@ -1,0 +1,11 @@
+package com.brillio.junit;
+
+import java.util.function.Function;
+
+public class Lamda {
+    public static void main(String[] args) {
+	 Function<Integer,Integer> function=t ->t*2;
+     int mul=function.apply(5);
+      System.out.println(min);
+    }
+}

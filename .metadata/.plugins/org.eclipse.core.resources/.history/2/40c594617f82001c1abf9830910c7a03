@@ -1,0 +1,10 @@
+package com.brillio.junit;
+
+
+
+
+public class Lamda {
+    public static void main(String[] args) {
+	
+    }
+}

@@ -1,0 +1,6 @@
+package com.brillio.powermockito;
+
+public interface UserDao {
+
+	public 
+}

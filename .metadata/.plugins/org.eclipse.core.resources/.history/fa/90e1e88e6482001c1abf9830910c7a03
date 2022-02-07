@@ -1,0 +1,25 @@
+package com.brillio.junit;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	@Test
+	public void TestForAddition() {
+		//test case fail
+		Calculator cal=new Calculator();
+		int sum=cal.addition(10, 10);
+		
+		//static assert method
+        assertEquals(20, sum);		
+	}
+	
+	@Test
+	@Ignore
+	public void TestForSubstraction() {
+		
+	}
+}

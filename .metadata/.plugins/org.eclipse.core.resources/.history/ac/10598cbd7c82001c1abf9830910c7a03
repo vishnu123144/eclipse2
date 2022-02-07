@@ -1,0 +1,13 @@
+package com.brillio.junit;
+
+
+import java.util.function.Function;
+
+public class Lamda {
+    public static void main(String[] args) {
+	 Function<Integer,Integer> find;
+	 find=(x) ->x+10;
+      int mul=find.apply(5);
+      System.out.println(mul);
+    }
+}

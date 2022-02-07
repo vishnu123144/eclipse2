@@ -1,0 +1,36 @@
+package com.brillio.junit;
+
+import static org.junit.Assert.assertEquals;
+
+
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	@Test
+	public void TestForValidNaturalAddition() {
+		//test case fail
+		Calculator cal=new Calculator();
+		int sum=cal.addition(10, 10);
+		
+		//static assert method
+        assertEquals(20,sum);		
+	}
+	
+	@Test
+	public void TestForInvalidNaturalAddition() {
+		Calculator cal1=new Calculator();
+		assertEquals(-1, cal1.addition(-10, 2));
+		assertEquals(-1, cal1.addition(2, -10));
+		assertEquals(-1, cal1.addition(0, 0));
+		assertEquals(-1, cal1.addition(10, -2));
+		
+	}
+	
+	@Test
+	public void TestForSubstraction() {
+		Calculator cal=new Calculator();
+		int sub=cal.substraction(20, 30);
+		assertEquals(-10,sub);
+	}
+}

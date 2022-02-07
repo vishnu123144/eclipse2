@@ -1,0 +1,23 @@
+package com.brillio.powermockito;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+import org.powermock.api.mockito.PowerMockito;
+
+public class UserServiceTest {
+    
+	@Test
+	public void testGetNameByUserId() {
+	
+	     UserDao mockDao=PowerMockito.mock(UserDao.class);  //creating a mock object
+	
+	     PowerMockito.when(mockDao.findNameById(101)).thenReturn("Nick");//defining the behaviour
+	     PowerMockito.when(mockDao.findNameById(102)).thenReturn("Ram");
+	     UserService service=new UserService(mockDao);
+	     String name=service.getNameByUserId(101);
+	     String name2=service.getNameByUserId(102);
+	     assertEquals("Nick", name);
+	     assertEquals("Ram", name);
+	}
+}

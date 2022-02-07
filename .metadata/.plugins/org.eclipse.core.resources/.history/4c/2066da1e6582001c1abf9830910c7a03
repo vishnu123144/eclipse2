@@ -1,0 +1,13 @@
+package com.brillio.junit;
+
+public class Calculator {
+	
+	public int addition(int x,int y) {
+		return 20;
+	}
+	
+	public int substraction(int x,int y) {
+		return 10;
+	}
+
+}

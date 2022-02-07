@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="jwttoken"/>
+<aop-project name="apigatewayservice"/>
+<aop-project name="UserCredential"/>
+<aop-project name="productservice"/>
+<aop-project name="couponservice"/>
+<aop-project name="student"/>
+<aop-project name="ZuulProxy"/>
+<aop-project name="EurekaServer"/>
+<aop-project name="first-web-project"/>
+<aop-project name="ConfigServer"/>
+</aop-reference-model>

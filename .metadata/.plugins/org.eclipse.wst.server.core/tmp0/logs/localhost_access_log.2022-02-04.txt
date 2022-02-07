@@ -1,0 +1,5 @@
+127.0.0.1 - - [04/Feb/2022:13:56:29 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Feb/2022:13:56:30 +0530] "GET /first-web-project/WEB-INF/classes/LoginController.java HTTP/1.1" 404 682
+127.0.0.1 - - [04/Feb/2022:13:58:50 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Feb/2022:13:58:51 +0530] "GET /first-web-project/WEB-INF/classes/com/udemy/LoginController.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [04/Feb/2022:14:03:17 +0530] "GET /login HTTP/1.1" 404 756

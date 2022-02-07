@@ -1,0 +1,5 @@
+package com.brillio.junit;
+
+public class EvenOrOdd {
+
+}

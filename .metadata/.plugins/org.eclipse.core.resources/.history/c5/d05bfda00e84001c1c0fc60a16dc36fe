@@ -1,0 +1,5 @@
+package com.brillio.controller;
+
+public class StudentController {
+
+}
